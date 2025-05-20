@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Thomas Gibson</title>
   <link rel="stylesheet" href="style.css">
   <!-- Add Bootstrap CSS CDN for easy styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,25 +19,26 @@
       flex-direction: column;
       justify-content: center;
     }
-    /* Section-specific backgrounds */
+    /* Consistent blue theme for all sections */
     #about {
-      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      background: linear-gradient(135deg, #e0f0ff 0%, #b3d8ff 100%);
     }
     #bio {
-      background: linear-gradient(135deg, #f9f9f9 0%, #e0e0e0 100%);
+      background: linear-gradient(135deg, #e0f0ff 0%, #b3d8ff 100%);
     }
     #projects {
-      background: url('img/laptop.jpg') center/cover no-repeat;
-      background-blend-mode: overlay;
-      background-color: rgba(255,255,255,0.85);
+      background: linear-gradient(135deg, #e0f0ff 0%, #b3d8ff 100%);
+      /* Remove image for consistency */
+      background-blend-mode: normal;
+      background-color: unset;
     }
     #skills {
-      background: url('img/hero-bg.jpg') center/cover no-repeat;
-      background-blend-mode: overlay;
-      background-color: rgba(255,255,255,0.85);
+      background: linear-gradient(135deg, #e0f0ff 0%, #b3d8ff 100%);
+      background-blend-mode: normal;
+      background-color: unset;
     }
     #contact {
-      background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+      background: linear-gradient(135deg, #e0f0ff 0%, #b3d8ff 100%);
     }
     /* Optional: Remove top padding for first section to avoid double spacing with navbar */
     #about { padding-top: 0; }
@@ -59,9 +60,6 @@
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#bio">Bio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
@@ -96,39 +94,27 @@
   </header>
 
   <!-- About Me section -->
-  <section id="about" class="container my-5">
-    <h2>About Me</h2>
-    <p>Hello! I'm a computer science student who loves coding and building cool projects. Welcome to my portfolio website!</p>
-  </section>
-
-  <!-- Bio section -->
-  <section id="bio" class="container my-5">
-    <h2>Bio</h2>
-    <p>I'm Thomas Gibson, a passionate Computer Science major at UNCG. I enjoy learning new technologies, building creative projects, and collaborating with others. My interests include graphics programming, web development, and exploring the latest in software engineering. I'm always eager to take on new challenges and grow as a developer!</p>
+  <section id="about" class="container my-5 d-flex flex-column justify-content-center align-items-center text-center">
+    <h2 class="mb-4">About Me</h2>
+    <div class="p-4 rounded shadow-lg bg-white bg-opacity-75" style="max-width: 600px;">
+      <p class="fs-5 fw-semibold text-primary mb-2">
+        Hello, I'm Thomas Gibson. I am a Computer Science student at UNCG expecting to graduate soon.
+      </p>
+      <p class="mb-1"><span class="fw-bold text-dark">Passionate about:</span> Programming, learning new technologies, and helping others.</p>
+      <p class="mb-1"><span class="fw-bold text-dark">Interests:</span> Graphics programming, low-level game development, and web development.</p>
+      <p class="mb-1"><span class="fw-bold text-dark">Experience:</span> C++, HLSL, DirectX 12, HTML, CSS, JavaScript, PHP.</p>
+      <p class="mb-0"><span class="fw-bold text-dark">Roles:</span> Computer Science tutor and Teacher Assistant at UNCG.</p>
+    </div>
   </section>
 
   <!-- Projects section -->
   <section id="projects" class="container my-5">
     <h2>My Projects</h2>
-    <div class="row">
-      <!-- Example project 1 -->
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/laptop.jpg" class="card-img-top" alt="Project screenshot">
-          <div class="card-body">
-            <h3 class="card-title">Project Title 1</h3>
-            <p class="card-text">This is a short description of my first project. It shows what I learned and built.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Example project 2 -->
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/hero-bg.jpg" class="card-img-top" alt="Project screenshot">
-          <div class="card-body">
-            <h3 class="card-title">Project Title 2</h3>
-            <p class="card-text">This is a short description of my second project. It highlights my skills in programming.</p>
-          </div>
+    <div class="row justify-content-center align-items-center" style="min-height: 40vh;">
+      <div class="col-12 text-center">
+        <div class="p-5 rounded shadow-lg bg-white bg-opacity-75 d-inline-block">
+          <h3 class="text-primary mb-3"><i class="fas fa-tools me-2"></i>Projects Section Under Construction</h3>
+          <p class="fs-5 text-secondary">Check back soon for updates on my latest work!</p>
         </div>
       </div>
     </div>
